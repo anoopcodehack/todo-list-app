@@ -1,0 +1,112 @@
+/* Basic page setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #8eedf4, #6ca6f8);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* App container */
+#todo-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 25px 30px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input and button row */
+#todo-input {
+  width: 70%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #66a6ff;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#todo-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 4px #3b82f6;
+}
+
+#add-btn {
+  padding: 10px 16px;
+  background-color: #48bd22;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Todo list styling */
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+#todo-list li {
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+#todo-list li:hover {
+  background: #eef2ff;
+}
+
+/* Text styling */
+#todo-list span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Delete button */
+#todo-list button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#todo-list button:hover {
+  background-color: #dc2626;
+}
+
+/* Completed tasks */
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: gray;
+}
