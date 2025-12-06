@@ -17,3 +17,10 @@ Tasks saved in localStorage (they stay even after refresh)
 Fully responsive UI
 
 Clean, simple layout
+Technologies Used-
+
+HTML5
+
+CSS3
+
+JavaScript (Vanilla)
